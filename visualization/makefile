@@ -1,0 +1,15 @@
+PYTHON = python3
+MAIN_FILE = main.py
+GAME_FILE = game.py
+GAME_FILE_2 = main_game.py
+VERTICES_FILE = vertices.txt
+DISTANCES_FILE = distances.txt
+
+all:
+	$(PYTHON) $(GAME_FILE_2) $(VERTICES_FILE) $(DISTANCES_FILE)
+
+game:
+	$(PYTHON) $(GAME_FILE) $(VERTICES_FILE) $(DISTANCES_FILE)
+
+grid:
+	$(PYTHON) $(MAIN_FILE) $(VERTICES_FILE) $(DISTANCES_FILE)

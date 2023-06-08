@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pyodide Example</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script>
+      languagePluginLoader.then(() => {
+        pyodide.runPython(`
+          
+        `);
+      });
+    </script>
+  </body>
+</html>
